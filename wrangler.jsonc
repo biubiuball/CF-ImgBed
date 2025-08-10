@@ -1,7 +1,4 @@
 {
   "name": "cf-imgbed",
   "compatibility_date": "2025-08-08",
-  "assets": {
-    "directory": "./"
-  }
 }
