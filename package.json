@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "build": "echo 'Building static assets' && mkdir -p dist && cp -r public/* dist/",
+    "build": "mkdir -p dist && cp -r ./* dist/ 2>/dev/null || true"
     "ci-test": "concurrently --kill-others \"npm start\" \"wait-on http://localhost:8080 && mocha\"",
     "test": "mocha",
     "start": "npx wrangler pages dev ./public --kv \"img_url\" --r2 \"img_r2\" --ip 0.0.0.0 --port 8080 --persist-to ./data"
