@@ -2,4 +2,4 @@ name = "cf-imgbed"
 compatibility_date = "2025-08-10"
 
 [assets]
-directory = "./"  # 指向根目录
+directory = "./" 
